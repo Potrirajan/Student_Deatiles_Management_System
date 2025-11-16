@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record</title>
+    <link rel="stylesheet" href="./student_record.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Student Course Management</h3>
+
+        <form action="#" id="frm" autocomplete="off">
+            <div class="form_group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form_group">
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="Enter Your Age">
+            </div>
+            <div class="form_check_group">
+                <label>Gender</label>
+                <div>
+                    <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+                </div>
+            </div>
+            <div class="form_group">
+                <label for="course">Course</label>
+                <select  id="course">
+                    <option value="">Select Course</option>
+                    <option value="c">C</option>
+                    <option value="c++">C++</option>
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                </select>
+            </div>
+            <button type="button" onclick="addStudent()">Save Data</button>
+        </form>
+        <p id="error"></p>
+        <table>
+            <caption>
+                <input type="search" id="textSearch" placeholder="Search Text..." oninput="filterTable()">
+            </caption>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Course</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="model">
+        <div class="model-content">
+            <span class="close" onclick="closeModel()">&times</span>
+            <form action="#" id="mfrm" autocomplete="off">
+                <input type="hidden" id="mid">
+            <div class="form_group">
+                <label for="mname">Name</label>
+                <input type="text" id="mname" placeholder="Enter Your Name">
+            </div>
+            <div class="form_group">
+                <label for="mage">Age</label>
+                <input type="number" id="mage" placeholder="Enter Your Age">
+            </div>
+            <div class="form_check_group">
+                <label>Gender</label>
+                <div>
+                    <input type="radio" name="mgender" id="mmale" value="male"><label for="mmale">Male</label>
+                    <input type="radio" name="mgender" id="mfemale" value="female"><label for="mfemale">Female</label>
+                </div>
+            </div>
+            <div class="form_group">
+                <label for="mcourse">Course</label>
+                <select  id="mcourse">
+                    <option value="">Select Course</option>
+                    <option value="c">C</option>
+                    <option value="c++">C++</option>
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                </select>
+            </div>
+            <button type="button" onclick="updateData()">Update Data</button>
+        </form>
+        </div>
+    </div>
+
+    <script src="./student_record.js"></script>
+
+
+    
+</body>
+</html>

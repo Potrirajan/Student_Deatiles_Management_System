@@ -1,0 +1,127 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: aliceblue;
+    padding-top: 20px;
+}
+.container{
+    background-color: white;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.container h3{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+#frm{
+    width: 50%;
+    margin: 20px 0;
+}
+.form_group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form_group input,
+.form_group select{
+    padding: 0.5rem;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.form_check_group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+button{
+    outline: none;
+    border: 1px solid #038f0c;
+    background-color: #038f0c;
+    border-radius: 5px;
+    padding: 0.3rem 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+table{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+table th,
+table td{
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px 0;
+}
+table td button{
+    outline: none;
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+table td:nth-child(6) button{
+    border: 1px solid rebeccapurple;
+    background-color: rebeccapurple;
+}
+table td:nth-child(7) button{
+    border: 1px solid red;
+    background-color: red;
+}
+
+#model{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.model-content{
+    width: 450px;
+    min-height: 350px;
+    background-color: #fff;
+    padding: 25px;
+    position: relative;
+}
+.close{
+    position: absolute;
+    font-size: 25px;
+    right: 0px;
+    top: 0;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+caption{
+    text-align: right;
+    padding: 10px 0px;
+}
+caption input{
+    padding: 0.2rem;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    outline: none;
+}
