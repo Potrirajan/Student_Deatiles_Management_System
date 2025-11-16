@@ -80,7 +80,4 @@ Here are some planned or possible improvements that can make the project more po
 
 ✔️ Responsive Mobile-Friendly Enhancements
 
-👨‍💻 Developer
-
-Designed & developed by potri
-Lightweight, clean, and effective CRUD application.
+Special Thanks for Tutor Jose Sir...
